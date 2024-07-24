@@ -1,0 +1,87 @@
+/* Define root colors for light and dark themes */
+:root {
+    --light-background: #ffffff; /* Light theme background color */
+    --light-fill: #f3f4f6; /* Background color for elements in light theme */
+    --light-button: #e5e7eb; /* Button background color in light theme */
+    --light-button-hover: #d1d5db; /* Button hover color in light theme */
+    --light-list-selected: #9ca3af; /* Selected button color in light theme */
+    --light-text-color: #333; /* Text color in light theme */
+    
+    --dark-background: #1a202c; /* Dark theme background color (changed to a darker shade) */
+    --dark-fill: #2d3748; /* Background color for elements in dark theme */
+    --dark-button: #4a5568; /* Button background color in dark theme */
+    --dark-button-hover: #2d3748; /* Button hover color in dark theme */
+    --dark-list-selected: #6b7280; /* Selected button color in dark theme */
+    --dark-text-color: #f5f5f5; /* Text color in dark theme */
+}
+
+/* Apply styles for light theme */
+body {
+    background-color: var(--light-background); /* Set the light theme background color */
+    color: var(--light-text-color); /* Set the text color for light theme */
+}
+
+/* Header and other component styles */
+.header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-fill); /* Header background color for light theme */
+}
+
+.logo {
+    width: 6.5rem;
+    margin: 0 1rem;
+    padding: 0.18rem;
+    border-radius:22%;
+    background-color: var(--light-fill); /* Logo background color for light theme */
+}
+
+.theme-toggle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.theme-toggle button {
+    font-size: 1.25rem;
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+    background-color: var(--light-button); /* Button background color for light theme */
+    transition: background-color 0.2s ease;
+}
+
+.theme-toggle button:hover {
+    background-color: var(--light-button-hover); /* Button hover color for light theme */
+}
+
+.theme-toggle .selected {
+    background-color: var(--light-list-selected); /* Selected button color for light theme */
+}
+
+/* Apply styles for dark theme */
+.dark body {
+    background-color: var(--dark-background); /* Set the dark theme background color */
+    color: var(--dark-text-color); /* Set the text color for dark theme */
+}
+
+.dark .header {
+    background-color: var(--dark-fill); /* Header background color for dark theme */
+}
+
+.dark .logo {
+    background-color: var(--dark-fill); /* Logo background color for dark theme */
+}
+
+.dark .theme-toggle button {
+    background-color: var(--dark-button); /* Button background color for dark theme */
+}
+
+.dark .theme-toggle button:hover {
+    background-color: var(--dark-button-hover); /* Button hover color for dark theme */
+}
+
+.dark .theme-toggle .selected {
+    background-color: var(--dark-list-selected); /* Selected button color for dark theme */
+}
